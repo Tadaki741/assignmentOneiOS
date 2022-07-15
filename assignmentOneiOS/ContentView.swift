@@ -3,6 +3,7 @@
 //  assignmentOneiOS
 //
 //  Created by Duong Vo Dai on 15/07/2022.
+// Initial commit on 15/07/2022
 //
 
 import SwiftUI
