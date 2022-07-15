@@ -7,14 +7,18 @@
 
 import SwiftUI
 
-struct HomePage: View {
-    var body: some View {
-        Text("This is the Home Page !").font(.title).foregroundColor(.green)
-    }
-}
-
-struct HomePage_Previews: PreviewProvider {
-    static var previews: some View {
-        HomePage()
-    }
+struct test: View {
+let roundRect = RoundedRectangle(cornerRadius: 25.0)
+var body: some View {
+    
+        Button( action: {
+            print("click")
+        }){
+            Text("Login")
+                .frame(width: UIScreen.main.bounds.width*0.4, height: 50, alignment: .center)
+                .background(roundRect.fill(Color.orange))
+                .overlay(roundRect.stroke())
+        }
+    
+  }
 }

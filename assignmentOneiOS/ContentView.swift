@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         return Group {
             if signInSuccess {
-                HomePage()
+                test()
             }
             else {
                 LoginFormView(signInSuccess: $signInSuccess)
