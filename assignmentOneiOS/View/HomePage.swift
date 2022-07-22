@@ -6,12 +6,31 @@
 //
 
 import SwiftUI
+//Display the list of programming languages
 
-struct test: View {
-    let roundRect = RoundedRectangle(cornerRadius: 25.0)
+struct HomePage: View {
+    
+    
+    
     var body: some View {
 
-        Text("This is a hello world message !");
+        Text("Display the list here");
+        
+        
+        
+        
 
     }
+    
+    
+    
 }
+
+struct HomePagePreviews: PreviewProvider {
+    static var previews: some View {
+        HomePage()
+    }
+}
+
+
+

@@ -11,7 +11,7 @@ import SwiftUI
 struct assignmentOneiOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginScreen()
         }
     }
 }
