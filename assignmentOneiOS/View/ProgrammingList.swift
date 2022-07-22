@@ -22,7 +22,7 @@ struct ProgrammingList: View {
                 }label: {
                     ProgrammingRow(programmingnLanguage: programming)
                 }
-                .navigationTitle("SSET Contact List")
+                .navigationTitle("Programming Language")
                 
             }
         }
