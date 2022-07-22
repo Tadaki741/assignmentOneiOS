@@ -54,8 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				D34C4F1028815886008CC220 /* assignmentOneiOSApp.swift */,
-				D34C4F1228815886008CC220 /* ContentView.swift */,
-				D34C4F2628816C67008CC220 /* HomePage.swift */,
+				D3B1B282288A8FE50090C4B4 /* Model */,
+				D3B1B283288A8FEB0090C4B4 /* View */,
 				D34C4F1428815886008CC220 /* Assets.xcassets */,
 				D34C4F1628815886008CC220 /* Preview Content */,
 			);
@@ -68,6 +68,22 @@
 				D34C4F1728815886008CC220 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3B1B282288A8FE50090C4B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3B1B283288A8FEB0090C4B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D34C4F1228815886008CC220 /* ContentView.swift */,
+				D34C4F2628816C67008CC220 /* HomePage.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
