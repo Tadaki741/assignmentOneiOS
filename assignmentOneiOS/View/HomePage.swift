@@ -14,12 +14,8 @@ struct HomePage: View {
     
     var body: some View {
 
-        Text("Display the list here");
+        ProgrammingList();
         
-        
-        
-        
-
     }
     
     

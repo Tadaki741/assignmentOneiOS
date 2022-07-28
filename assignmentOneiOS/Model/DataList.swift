@@ -10,7 +10,7 @@ import CoreLocation
 
 var dataList: [ProgrammingLanguage] = [
 
-    ProgrammingLanguage(name: "JAVA", introducedYear: "1995", nameOfAuthor: "James Gosling", countryOrigin: "USA", imageName: "java-image", application: "multi-purpose programming language"),
+    ProgrammingLanguage(name: "JAVA", introducedYear: "1995", nameOfAuthor: "James Gosling", countryOrigin: "USA", imageName: "https://1000logos.net/wp-content/uploads/2020/09/Java-Emblem.jpg", application: "multi-purpose programming language"),
     ProgrammingLanguage(name: "PYTHON", introducedYear: "1990", nameOfAuthor: "Guido van Rossum", countryOrigin: "Netherland", imageName: "python-image", application: "multi-purpose programming language"),
     ProgrammingLanguage(name: "C++", introducedYear: "1980", nameOfAuthor: "Bjarne Stroustrup", countryOrigin: "USA", imageName: "cpp-image", application: "focused on game programming"),
     ProgrammingLanguage(name: "C#", introducedYear: "2001", nameOfAuthor: "Anders Hejlsberg", countryOrigin: "Denmark", imageName: "csharp-image", application: "windows desktop application"),

@@ -15,8 +15,17 @@ struct ProgrammingRow: View {
     
     var body: some View {
         HStack{
-            programmingnLanguage.image.resizable()
-                .frame(width: 50, height: 50)
+            //An image
+//            programmingnLanguage.image.resizable()
+//                .frame(width: 50, height: 50)
+//          use the url of the string
+            AsyncImage(url: URL(string: programmingnLanguage.imageName)) { image in
+                image.resizable()
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(width: 60, height: 60)
+            //a text to describe the name of the item in the card
             Text(programmingnLanguage.name);
             
         }

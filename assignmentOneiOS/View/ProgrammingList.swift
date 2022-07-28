@@ -15,14 +15,12 @@ struct ProgrammingList: View {
             
             List(dataList, id: \.self.name){programming in
                 
-                
-                
                 NavigationLink{
-                    ProgrammingCard(programmingLanguage: programming)
-                }label: {
+                    ProgrammingCard(programmingLanguage: programming)}
+            
+                label: {
                     ProgrammingRow(programmingnLanguage: programming)
-                }
-                .navigationTitle("Programming Language")
+                }.navigationTitle("Programming Language")
                 
             }
         }

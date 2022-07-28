@@ -15,7 +15,7 @@ struct LoginScreen: View {
     var body: some View {
         return Group {
             if signInSuccess {
-                ProgrammingList()
+                HomePage();
             }
             else {
                 LoginFormView(signInSuccess: $signInSuccess)
