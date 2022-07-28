@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ProgrammingList: View {
+    
+    
+    
     var body: some View {
         
         NavigationView{
@@ -18,9 +21,10 @@ struct ProgrammingList: View {
                 NavigationLink{
                     ProgrammingCard(programmingLanguage: programming)}
             
+                //This is the label for each card
                 label: {
                     ProgrammingRow(programmingnLanguage: programming)
-                }.navigationTitle("Programming Language")
+                }.navigationTitle("Programming Language").foregroundColor(.indigo)
                 
             }
         }
