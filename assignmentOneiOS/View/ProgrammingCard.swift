@@ -14,50 +14,58 @@ struct ProgrammingCard: View {
     
     var body: some View {
         
-        
-        
             ZStack {
-                ColorConstant.backgroundBlue.edgesIgnoringSafeArea(.all)
+                
                 
                 ScrollView{
                     
                     VStack{
-                        
-                        
-                        CircleImage(image: programmingLanguage.image)
-                        
-                        
-                        
-                        Text(programmingLanguage.name).font(.system(size: 40)).foregroundColor(.white).bold();
+                        MapView(coordinate: self.programmingLanguage.locationCoordinate)
+                            .edgesIgnoringSafeArea(.top)
+                            .frame(height: 500)
+                            .overlay(Rectangle().stroke(.black,lineWidth: 5))
                         
                         
                         
+                        HStack{
+                            
+                            Text(programmingLanguage.nameOfAuthor).font(.system(size: 40)).foregroundColor(.black).bold();
+                            
+                            AsyncImage(url: URL(string: self.programmingLanguage.imageName)) { image in
+                                image.resizable()
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            .frame(width: 90, height: 90)
+                            .edgesIgnoringSafeArea(.top)
+                            .frame(height: 90)
+                            .overlay(Rectangle().stroke(.blue,lineWidth: 1))
+                        }
+                        
+                        VStack{
+                            Group{
+                                Text("Year published: " + self.programmingLanguage.introducedYear);
+                                Text("Country of origin: " + self.programmingLanguage.countryOrigin);
+                            }.padding()
+                            
+                        }
+                    
                         
                         
-                        Image("rmit-logo-white")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: 75);
                         
-                        
-                        
-                        
-                        Group{
-                            InfoView(text: programmingLanguage.name, imageName: "envelope.fill")
-                            InfoView(text: programmingLanguage.nameOfAuthor, imageName: "phone.fill")
-                        }.padding();
+                        Text(programmingLanguage.application).foregroundColor(.black).frame(alignment: .center)
                     
                         
                         
                         
                         
                     }
-                }
+                }.padding()
+                    .lineSpacing(5)
                 
                 
             }
             
-            .navigationTitle(programmingLanguage.name)
             .navigationBarTitleDisplayMode(.inline)
             .foregroundColor(.red);
             

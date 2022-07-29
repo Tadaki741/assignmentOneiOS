@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30844D32893B8D8000BBD9C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30844D22893B8D8000BBD9C /* MapView.swift */; };
 		D34C4F1128815886008CC220 /* assignmentOneiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C4F1028815886008CC220 /* assignmentOneiOSApp.swift */; };
 		D34C4F1328815886008CC220 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C4F1228815886008CC220 /* LoginScreen.swift */; };
 		D34C4F1528815886008CC220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34C4F1428815886008CC220 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D30844D22893B8D8000BBD9C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D34C4F0D28815886008CC220 /* assignmentOneiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assignmentOneiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34C4F1028815886008CC220 /* assignmentOneiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignmentOneiOSApp.swift; sourceTree = "<group>"; };
 		D34C4F1228815886008CC220 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				D3B1B28E288ABB3A0090C4B4 /* ProgrammingCard.swift */,
 				D3B1B290288ABC250090C4B4 /* ProgrammingRow.swift */,
 				D3B1B292288ABDA20090C4B4 /* InfoView.swift */,
+				D30844D22893B8D8000BBD9C /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3B1B287288A9BF80090C4B4 /* DataList.swift in Sources */,
+				D30844D32893B8D8000BBD9C /* MapView.swift in Sources */,
 				D3B1B293288ABDA20090C4B4 /* InfoView.swift in Sources */,
 				D34C4F1328815886008CC220 /* LoginScreen.swift in Sources */,
 				D34C4F2728816C67008CC220 /* HomePage.swift in Sources */,

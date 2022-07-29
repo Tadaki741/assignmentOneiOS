@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+import CoreLocation
 
 struct ProgrammingLanguage: Identifiable{
     
@@ -24,4 +24,7 @@ struct ProgrammingLanguage: Identifiable{
     var image: Image{
         Image(imageName)
     }
+    
+    //Each programming language will have its own country of origin
+    var locationCoordinate: CLLocationCoordinate2D
 }
