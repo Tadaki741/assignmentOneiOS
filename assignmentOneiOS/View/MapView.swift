@@ -20,8 +20,7 @@ struct MapView: View {
             Map(coordinateRegion: $region)
             .onAppear{
                 setRegion(coordinate)
-                MapMarker(coordinate: coordinate,
-                                  tint: Color.purple)
+                
             }
     }
     
