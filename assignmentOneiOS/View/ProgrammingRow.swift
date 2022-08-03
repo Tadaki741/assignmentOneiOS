@@ -14,21 +14,34 @@ struct ProgrammingRow: View {
     var programmingnLanguage: ProgrammingLanguage;
     
     var body: some View {
-        HStack{
-            //An image
-//            programmingnLanguage.image.resizable()
-//                .frame(width: 50, height: 50)
-//          use the url of the string
-            AsyncImage(url: URL(string: programmingnLanguage.imageName)) { image in
-                image.resizable()
-            } placeholder: {
-                ProgressView()
+        
+        ZStack(alignment: .leading){
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.cyan)
+                        .frame(height: 100)
+                        .opacity(0.3)
+                        
+            HStack{
+
+                AsyncImage(url: URL(string: programmingnLanguage.imageName)) { image in
+                    image.resizable().padding()
+                }
+                    
+                placeholder: {
+                    ProgressView()
+                }.frame(width: 60, height: 60)
+                
+                
+                //a text to describe the name of the item in the card
+                Text(programmingnLanguage.name).fontWeight(.bold);
+                
             }
-            .frame(width: 60, height: 60)
-            //a text to describe the name of the item in the card
-            Text(programmingnLanguage.name);
-            
-        }
+        }.padding()
+        
+        
+        
+        
+        
     }
 }
 
