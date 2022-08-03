@@ -34,7 +34,7 @@ struct ProgrammingList: View {
                     //This is the label for each card
                     label: {
                         ProgrammingRow(programmingnLanguage: programming)
-                    }.navigationTitle("Programming Language").foregroundColor(.indigo)
+                    }.navigationTitle("Top ten languages").foregroundColor(.cyan)
                     
                 }
             }

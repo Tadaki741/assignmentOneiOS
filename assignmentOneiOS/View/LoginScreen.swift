@@ -40,11 +40,32 @@ struct LoginFormView : View {
         ZStack{
             
             VStack {
+                
+                //Text description that welcome the user
+                Text("The diversity of programming language")
+                    .font(Font.system(size: 46, weight: .bold))
+                    .multilineTextAlignment(.center)
+                    .overlay {
+                        LinearGradient(
+                            colors: [.red, .blue, .green, .yellow],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                        .mask(
+                            Text("The diversity of programming language")
+                                .font(Font.system(size: 46, weight: .bold))
+                                .multilineTextAlignment(.center)
+                        )
+                    }
+                
+                //Username login
                 HStack {
                     Text("Username: ")
                     TextField("Enter your username", text: $userName)
                 }.padding()
                 
+                
+                //Password login
                 HStack {
                     Text("Password: ")
                     TextField("Enter your password", text: $password)
@@ -52,6 +73,7 @@ struct LoginFormView : View {
                 }.padding()
                 
                 
+                //Button to login
                 Button( action: {
                     // Your auth logic
                     if(self.userName == "Admin" && self.password == "Admin") {
