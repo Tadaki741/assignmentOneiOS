@@ -9,9 +9,29 @@ import SwiftUI
 
 @main
 struct assignmentOneiOSApp: App {
+    
+    @AppStorage("isDarkMode") private var isDarkMode = false;
+    
     var body: some Scene {
         WindowGroup {
-            LoginScreen()
+            
+            TabView{
+                NavigationView{
+                    LoginScreen()
+                }.tabItem{
+                Image(systemName: "list.bullet")
+                Text("List")
+                
+                }
+                Text("Profile")
+                    .tabItem{
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
+                      
+            }.preferredColorScheme(isDarkMode ? .dark : .light)
+                .accentColor(.primary)
+            
         }
     }
 }

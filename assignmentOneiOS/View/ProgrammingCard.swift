@@ -29,8 +29,10 @@ struct ProgrammingCard: View {
                         
                         HStack{
                             
-                            Text(programmingLanguage.nameOfAuthor).font(.system(size: 40)).foregroundColor(.black).bold();
+                            //Author name of the language
+                            Text(programmingLanguage.nameOfAuthor).font(.system(size: 40)).foregroundColor(.cyan).bold();
                             
+                            //Logo of the programming language
                             AsyncImage(url: URL(string: self.programmingLanguage.imageName)) { image in
                                 image.resizable()
                             } placeholder: {
@@ -42,6 +44,8 @@ struct ProgrammingCard: View {
                             .overlay(Rectangle().stroke(.blue,lineWidth: 1))
                         }
                         
+                        
+                        //Group of the year published and original country
                         VStack{
                             Group{
                                 Text("Year published: " + self.programmingLanguage.introducedYear);
@@ -52,29 +56,18 @@ struct ProgrammingCard: View {
                     
                         
                         
-                        
-                        Text(programmingLanguage.application).foregroundColor(.black).frame(alignment: .center)
+                        //Description of the programming language
+                        Text(programmingLanguage.application).foregroundColor(.cyan).frame(alignment: .center)
                     
                         
                         
                         
                         
                     }
-                }.padding()
-                    .lineSpacing(5)
+                }.padding().lineSpacing(5)
                 
-                
-            }
-            
-            .navigationBarTitleDisplayMode(.inline)
-            .foregroundColor(.red);
-            
-            
-        
+            }.navigationBarTitleDisplayMode(.inline).foregroundColor(.red);
         }
-        
-        
-        
 }
 
 struct ProgrammingCard_Previews: PreviewProvider {
