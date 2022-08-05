@@ -42,7 +42,7 @@ struct LoginFormView : View {
             VStack {
                 
                 //Text description that welcome the user
-                Text("The diversity of programming language")
+                Text("Popular languages in Computer Science")
                     .font(Font.system(size: 46, weight: .bold))
                     .multilineTextAlignment(.center)
                     .overlay {
@@ -52,7 +52,7 @@ struct LoginFormView : View {
                             endPoint: .trailing
                         )
                         .mask(
-                            Text("The diversity of programming language")
+                            Text("Popular languages in Computer Science")
                                 .font(Font.system(size: 46, weight: .bold))
                                 .multilineTextAlignment(.center)
                         )
