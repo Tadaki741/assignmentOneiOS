@@ -39,6 +39,7 @@
 		D3B1B28E288ABB3A0090C4B4 /* ProgrammingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingCard.swift; sourceTree = "<group>"; };
 		D3B1B290288ABC250090C4B4 /* ProgrammingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingRow.swift; sourceTree = "<group>"; };
 		D3B1B292288ABDA20090C4B4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		D3C791CD289CE37400C33F14 /* SystemDocumentation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SystemDocumentation.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 		D34C4F0F28815886008CC220 /* assignmentOneiOS */ = {
 			isa = PBXGroup;
 			children = (
+				D3C791CA289CDF9000C33F14 /* SystemDocumentation */,
 				D34C4F1028815886008CC220 /* assignmentOneiOSApp.swift */,
 				D3B1B282288A8FE50090C4B4 /* Model */,
 				D3B1B283288A8FEB0090C4B4 /* View */,
@@ -111,6 +113,14 @@
 				D30844D22893B8D8000BBD9C /* MapView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D3C791CA289CDF9000C33F14 /* SystemDocumentation */ = {
+			isa = PBXGroup;
+			children = (
+				D3C791CD289CE37400C33F14 /* SystemDocumentation.pdf */,
+			);
+			path = SystemDocumentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
